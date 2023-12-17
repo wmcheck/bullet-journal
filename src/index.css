@@ -19,10 +19,7 @@ code {
   font-weight: bold;
 }
 
-.font-bullet {
-  font-size: large;
-  font-family: "Rosarium";
-}
+
 
 .ant-tabs-top >.ant-tabs-nav {
   margin: 0;
@@ -55,7 +52,20 @@ code {
 .column-action {
   background: rgb(3 169 244 / 25%);
 }
-
-#components-grid-demo-flex-order [class~='ant-row'] {
+.column-bullet {
+background: white;
+}
+#grid-bullet [class~='ant-row'] {
+  /* background: rgba(128, 128, 128, 0.08); */
+  /* margin: 1px; */
+}
+#grid-bullet [class~='ant-col'] {
   background: rgba(128, 128, 128, 0.08);
+  margin: 1px;
+}
+
+.font-bullet {
+  font-size: large;
+  font-family: "Rosarium";
+  background: white;
 }

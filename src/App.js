@@ -30,9 +30,9 @@ const Body = (props) => {
             // borderRadius: borderRadiusLG,
           }}
         >
-          <div style={{padding: '20px'}}>
-          Content {t}
-              <Row justify="end" align="middle">
+          <div id="grid-bullet" style={{padding: '20px'}}>
+              Content {t}
+              <Row>
                 <Col span={1} className='column'>Пн</Col>
                 <Col span={1} className='column'>Вт</Col>
                 <Col span={1} className='column'>Ср</Col>
@@ -40,7 +40,7 @@ const Body = (props) => {
                 <Col span={1} className='column column-action'>Пт</Col>
                 <Col span={1} className='column'>Сб</Col>
                 <Col span={1} className='column'>Вс</Col>
-                <Col span={17}></Col>
+                <Col span={16}><PlusCircleTwoTone twoToneColor="#52c41a"/></Col>
               </Row>          
               <Row>
                 <Col span={1} className='column'></Col>
@@ -50,7 +50,7 @@ const Body = (props) => {
                 <Col span={1} className='column column-action'></Col>
                 <Col span={1} className='column'></Col>
                 <Col span={1} className='column'></Col>
-                <Col span={17} className="font-bullet">Текст задания для выполнения в эту неделю</Col>
+                <Col span={16} className="font-bullet">Текст задания для выполнения в эту неделю</Col>
               </Row>
               <Row>
                 <Col span={1} className='column'></Col>
@@ -60,7 +60,7 @@ const Body = (props) => {
                 <Col span={1} className='column column-action'></Col>
                 <Col span={1} className='column'></Col>
                 <Col span={1} className='column'></Col>
-                <Col span={17} className="font-bullet">Текст какой то</Col>
+                <Col span={16} className="font-bullet">Текст какой то</Col>
               </Row>
               <Row>
                 <Col span={1} className='column'></Col>
@@ -70,7 +70,7 @@ const Body = (props) => {
                 <Col span={1} className='column column-action'></Col>
                 <Col span={1} className='column'><PlusCircleTwoTone twoToneColor="gray"/></Col>
                 <Col span={1} className='column'></Col>
-                <Col span={17} className="font-bullet">Текст какой то</Col>
+                <Col span={16} className="font-bullet">Текст какой то</Col>
               </Row>
               <Row>
                 <Col span={1} className='column'></Col>
@@ -80,7 +80,7 @@ const Body = (props) => {
                 <Col span={1} className='column column-action'></Col>
                 <Col span={1} className='column'><PlusCircleTwoTone /></Col>
                 <Col span={1} className='column'></Col>
-                <Col span={17} className="font-bullet">Текст какой то</Col>
+                <Col span={16} className="font-bullet">Текст какой то</Col>
               </Row>
               <Row>
                 <Col span={1} className='column'></Col>
@@ -90,7 +90,7 @@ const Body = (props) => {
                 <Col span={1} className='column column-action'><ClockCircleTwoTone /></Col>
                 <Col span={1} className='column'></Col>
                 <Col span={1} className='column'></Col>
-                <Col span={17} className="font-bullet">Текст какой то</Col>
+                <Col span={16} className="font-bullet">Текст какой то</Col>
               </Row>
           </div>
         </div>
