@@ -11,3 +11,51 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Rosarium';
+  src: local('Rosarium'),
+    url('./fonts/Rosarium.ttf') format('truetype');
+  font-weight: bold;
+}
+
+.font-bullet {
+  font-size: large;
+  font-family: "Rosarium";
+}
+
+.ant-tabs-top >.ant-tabs-nav {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.ant-layout-header {
+  background: #f5f5f5;
+}
+
+.ant-menu-dark,.ant-menu-dark>.ant-menu {
+    background: #f5f5f5;
+}
+
+.ant-layout-header {
+    padding-left: 20px;
+}
+
+.ant-tabs-tab-active {
+  font-weight: 600;
+}
+
+.logo-text {
+  font-size: larger;
+}
+
+.column {
+  text-align: center;
+}
+.column-action {
+  background: rgb(3 169 244 / 25%);
+}
+
+#components-grid-demo-flex-order [class~='ant-row'] {
+  background: rgba(128, 128, 128, 0.08);
+}
