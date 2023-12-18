@@ -64,6 +64,7 @@ code {
 
 .column {
   text-align: center;
+  align-self: center;
 }
 .column-action {
   background: rgb(3 169 244 / 15%);
@@ -81,5 +82,5 @@ background: white;
 }
 
 .rows:hover {
-  background-color: rgb(3 169 244 / 25%);
+  background-color: rgb(3 169 244 / 5%);
 }
