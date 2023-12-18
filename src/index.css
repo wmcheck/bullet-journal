@@ -84,3 +84,8 @@ background: white;
 .rows:hover {
   background-color: rgb(3 169 244 / 5%);
 }
+
+.buttonBullet {
+  border: none;
+  
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Tabs, Col, Row } from 'antd';
+import { Layout, Tabs, Col, Row, Button, Popover } from 'antd';
 import { CheckCircleTwoTone, ClockCircleTwoTone, PlusCircleTwoTone, RightCircleTwoTone } from '@ant-design/icons';
 const { Header, Content } = Layout;
 
@@ -11,6 +11,13 @@ const { Header, Content } = Layout;
 // const {
 //     token: { colorBgContainer, borderRadiusLG },
 // } = theme.useToken();
+
+const content = (
+  <div>
+    <p>Content</p>
+    <p>Content</p>
+  </div>
+);
 
 const Body = (props) => {
   const { t } = props;
@@ -45,7 +52,11 @@ const Body = (props) => {
                 <Col span={16}><PlusCircleTwoTone twoToneColor="#52c41a"/></Col>
               </Row>          
               <Row className="rows">
-                <Col span={1} className='column'></Col>
+                <Col span={1} className='column'>
+                  <Popover content={content} title="Title">
+                    <Button className='buttonBullet'>?</Button>
+                  </Popover>
+                </Col>
                 <Col span={1} className='column'></Col>
                 <Col span={1} className='column'></Col>
                 <Col span={1} className='column'><CheckCircleTwoTone twoToneColor="#52c41a"/></Col>
