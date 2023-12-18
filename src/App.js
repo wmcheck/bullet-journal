@@ -2,10 +2,11 @@ import React from 'react';
 import { Layout, Tabs, Col, Row } from 'antd';
 import { CheckCircleTwoTone, ClockCircleTwoTone, PlusCircleTwoTone, RightCircleTwoTone } from '@ant-design/icons';
 const { Header, Content } = Layout;
-const items = new Array(3).fill(null).map((_, index) => ({
-  key: String(index + 1),
-  label: `nav ${index + 1}`,
-}));
+
+// const items = new Array(3).fill(null).map((_, index) => ({
+//   key: String(index + 1),
+//   label: `nav ${index + 1}`,
+// }));
 
 // const {
 //     token: { colorBgContainer, borderRadiusLG },
@@ -40,9 +41,9 @@ const Body = (props) => {
                 <Col span={1} className='column column-action'>Пт</Col>
                 <Col span={1} className='column'>Сб</Col>
                 <Col span={1} className='column'>Вс</Col>
-                <Col span={16}><PlusCircleTwoTone twoToneColor="#52c41a"/></Col>
+                <Col span={17}><PlusCircleTwoTone twoToneColor="#52c41a"/></Col>
               </Row>          
-              <Row>
+              <Row className="rows">
                 <Col span={1} className='column'></Col>
                 <Col span={1} className='column'></Col>
                 <Col span={1} className='column'></Col>
@@ -50,9 +51,9 @@ const Body = (props) => {
                 <Col span={1} className='column column-action'></Col>
                 <Col span={1} className='column'></Col>
                 <Col span={1} className='column'></Col>
-                <Col span={16} className="font-bullet">Текст задания для выполнения в эту неделю</Col>
+                <Col span={17} className="font-bullet">Текст задания для выполнения в эту неделю</Col>
               </Row>
-              <Row>
+              <Row className="rows">
                 <Col span={1} className='column'></Col>
                 <Col span={1} className='column'><RightCircleTwoTone twoToneColor="orange"/></Col>
                 <Col span={1} className='column'></Col>
@@ -60,9 +61,9 @@ const Body = (props) => {
                 <Col span={1} className='column column-action'></Col>
                 <Col span={1} className='column'></Col>
                 <Col span={1} className='column'></Col>
-                <Col span={16} className="font-bullet">Текст какой то</Col>
+                <Col span={17} className="font-bullet">Текст какой то</Col>
               </Row>
-              <Row>
+              <Row className="rows">
                 <Col span={1} className='column'></Col>
                 <Col span={1} className='column'></Col>
                 <Col span={1} className='column'><PlusCircleTwoTone twoToneColor="gray"/></Col>
@@ -70,9 +71,9 @@ const Body = (props) => {
                 <Col span={1} className='column column-action'></Col>
                 <Col span={1} className='column'><PlusCircleTwoTone twoToneColor="gray"/></Col>
                 <Col span={1} className='column'></Col>
-                <Col span={16} className="font-bullet">Текст какой то</Col>
+                <Col span={17} className="font-bullet">Текст какой то</Col>
               </Row>
-              <Row>
+              <Row className="rows">
                 <Col span={1} className='column'></Col>
                 <Col span={1} className='column'></Col>
                 <Col span={1} className='column'><PlusCircleTwoTone /></Col>
@@ -80,9 +81,9 @@ const Body = (props) => {
                 <Col span={1} className='column column-action'></Col>
                 <Col span={1} className='column'><PlusCircleTwoTone /></Col>
                 <Col span={1} className='column'></Col>
-                <Col span={16} className="font-bullet">Текст какой то</Col>
+                <Col span={17} className="font-bullet">Текст какой то</Col>
               </Row>
-              <Row>
+              <Row className="rows">
                 <Col span={1} className='column'></Col>
                 <Col span={1} className='column'></Col>
                 <Col span={1} className='column'></Col>
@@ -90,7 +91,7 @@ const Body = (props) => {
                 <Col span={1} className='column column-action'><ClockCircleTwoTone /></Col>
                 <Col span={1} className='column'></Col>
                 <Col span={1} className='column'></Col>
-                <Col span={16} className="font-bullet">Текст какой то</Col>
+                <Col span={17} className="font-bullet">Текст какой то</Col>
               </Row>
           </div>
         </div>

@@ -46,26 +46,40 @@ code {
   font-size: larger;
 }
 
-.column {
-  text-align: center;
-}
-.column-action {
-  background: rgb(3 169 244 / 25%);
-}
-.column-bullet {
-background: white;
-}
+
 #grid-bullet [class~='ant-row'] {
   /* background: rgba(128, 128, 128, 0.08); */
   /* margin: 1px; */
 }
 #grid-bullet [class~='ant-col'] {
-  background: rgba(128, 128, 128, 0.08);
-  margin: 1px;
+  /* background: rgba(128, 128, 128, 0.08); */
+  /* margin: 1px; */
 }
 
 .font-bullet {
   font-size: large;
   font-family: "Rosarium";
   background: white;
+}
+
+.column {
+  text-align: center;
+}
+.column-action {
+  background: rgb(3 169 244 / 15%);
+}
+.column-bullet {
+background: white;
+}
+
+#grid-bullet [class~='column-action'] {
+  background: rgb(3 169 244 / 15%);
+}
+
+#grid-bullet [class~='font-bullet'] {
+  background: white;
+}
+
+.rows:hover {
+  background-color: rgb(3 169 244 / 25%);
 }
