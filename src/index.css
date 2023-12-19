@@ -87,5 +87,30 @@ background: white;
 
 .buttonBullet {
   border: none;
-  
+
+}
+
+.snow-container {
+    height: 50px;
+    width: 100px;
+    position: relative;
+    overflow: hidden;
+}
+.snow {
+    position: absolute;
+}
+
+
+svg.snow-main {
+    font-size: 50px;
+    top: 12px;
+}
+
+svg.snow {
+    animation: infinite 6s snowflake-spin;
+    animation-timing-function: ease-in-out;
+    background: linear-gradient(-45deg, rgba(100, 210, 255, 0.52) 0%, #64d2ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
