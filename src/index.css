@@ -90,27 +90,60 @@ background: white;
 
 }
 
+
 .snow-container {
-    height: 50px;
-    width: 100px;
-    position: relative;
-    overflow: hidden;
-}
-.snow {
+  height: 50px;
+  width: 100px;
+  position: relative;
+  overflow: hidden;
+
+  .snow {
     position: absolute;
-}
-
-
-svg.snow-main {
-    font-size: 50px;
-    top: 12px;
+  }
 }
 
 svg.snow {
-    animation: infinite 6s snowflake-spin;
-    animation-timing-function: ease-in-out;
-    background: linear-gradient(-45deg, rgba(100, 210, 255, 0.52) 0%, #64d2ff 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  animation: infinite 6s snowflake-spin;
+  animation-timing-function: ease-in-out;
+  background: linear-gradient(-45deg, rgba(100, 210, 255, 0.52) 0%, #64d2ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+svg.snow-main {
+  font-size: 50px;
+  top: 12px;
+}
+svg.snow-sm {
+  font-size: 20px;
+  animation-delay: 0.7s;
+  opacity: 0.8;
+  left: 65px;
+  top: 23px;
+}
+svg.snow-xs {
+  font-size: 14px;
+  animation-delay: 0.3s;
+  opacity: 0.6;
+  left: 50px;
+  top: 9px;
+}
+
+@keyframes snowflake-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  12% {
+    transform: rotate(20deg);
+  }
+  25% {
+    transform: rotate(-13deg);
+  }
+  37% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
 }
